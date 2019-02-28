@@ -1,0 +1,3 @@
+#!/bin/bash
+NPM_IMAGE=lambci/lambda:nodejs8.10
+docker run --rm --entrypoint npm --user root -v "$PWD":/var/task $NPM_IMAGE $@
